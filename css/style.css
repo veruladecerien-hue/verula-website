@@ -1,8 +1,19 @@
+/* YemaKal Golden Bites - Color Palette
+   Dark Brown:    #42200f  (text, footer)
+   Golden Yellow: #fff2a0  (hero, highlights)
+   Orange:        #efa414  (button)
+   Cream:         #fffdf5  (header, about)
+   Light Gold:    #fff8dc  (features)
+   Font: Poppins (Google Fonts), fallback Arial, sans-serif
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 html {
@@ -17,12 +28,12 @@ body {
     border: 1px solid #e5dfd5;
     border-radius: 10px;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 
+/* ---------- Header & Navigation ---------- */
 header {
     background-color: #fffdf5;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .parenttop {
@@ -33,9 +44,10 @@ header {
 
 .childrentop1 img {
     width: 100px;
+    display: block;
 }
 
-.childrentop2 nav {
+nav {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -43,7 +55,7 @@ header {
 
 nav a {
     text-decoration: none;
-    color: #4A2916;
+    color: #4a2916;
     font-size: 15px;
     font-weight: bold;
     padding: 10px 16px;
@@ -52,36 +64,41 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #FFF0B3;
-    color: #9A571D;
+    background-color: #fff0b3;
+    color: #9a571d;
 }
 
+/* ---------- Hero Section ---------- */
 #home {
     background-color: #fff2a0;
-    padding: 25px;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 15px;
 }
 
-#home h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
+#home h1 {
+    font-size: 34px;
 }
 
 #home h3 {
     font-size: 23px;
     color: #d58a20;
     font-style: italic;
-    margin-bottom: 15px;
 }
 
-#home p:first-of-type {
+.hero-text {
     font-size: 16px;
-    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
-#home button {
+.price {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.cta-button {
     background-color: #efa414;
     color: #42200f;
     border: none;
@@ -90,28 +107,26 @@ nav a:hover {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    order: 4;
+    transition: 0.3s;
 }
 
-#home img {
+.cta-button:hover {
+    background-color: #42200f;
+    color: #fff2a0;
+}
+
+.hero-img {
     width: 100%;
-    height:970px;
+    max-width: 450px;
+    max-height: 450px;
     object-fit: cover;
     border-radius: 20px;
-    margin-top: 10px;
-    order: 5;
 }
 
-#home p:last-of-type {
-    font-size: 23px;
-    font-weight: bold;
-    margin-top: 15px;
-    order: 6;
-}
-
+/* ---------- About Section ---------- */
 #about {
     background-color: #fffdf5;
-    padding: 25px 20px;
+    padding: 40px 25px;
 }
 
 #about h2 {
@@ -126,9 +141,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* ---------- Highlights Section ---------- */
 #features {
     background-color: #fff8dc;
-    padding: 25px 20px;
+    padding: 40px 25px;
 }
 
 #features h2 {
@@ -136,35 +152,65 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.features-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
 .feature {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
+    flex: 1;
+    background-color: #fffdf5;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .feature h3 {
     color: #d9790b;
     font-size: 19px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .feature p {
     font-size: 14px;
+    line-height: 1.5;
 }
 
+/* ---------- Footer ---------- */
 footer {
     background-color: #42200f;
-    color: white;
-    padding: 20px 15px;
+    color: #ffffff;
+    padding: 25px 20px;
 }
 
-footer h1 {
+.footer-title {
     color: #fff2a0;
     font-size: 22px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 footer p {
     font-size: 14px;
     margin-bottom: 8px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+    .parenttop {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .features-wrapper {
+        flex-direction: column;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
 }
