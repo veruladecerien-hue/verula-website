@@ -1,7 +1,7 @@
 /* YemaKal Golden Bites - Color Palette
    Dark Brown:    #42200f  (text, footer)
    Golden Yellow: #fff2a0  (hero, highlights)
-   Orange:        #efa414  (button)
+   Golden Amber:  #E8A317  (button)
    Cream:         #fffdf5  (header, about)
    Light Gold:    #fff8dc  (features)
    Font: Poppins (Google Fonts), fallback Arial, sans-serif
@@ -170,12 +170,13 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.cta-button {
-    background-color: #efa414;
+#order button {
+    background-color: #E8A317;
     color: #42200f;
     border: none;
     border-radius: 30px;
     padding: 13px 35px;
+    margin-left: 20px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -192,7 +193,7 @@ footer {
     color: #fff2a0;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 footer p {
