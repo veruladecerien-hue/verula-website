@@ -3,108 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YemaKal Golden Bites — crispy binangkal with a sweet, creamy yema filling.">
     <title>YemaKal Golden Bites</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-    <div class="parenttop">
+        <div class="parenttop">
+            <a class="brand" href="#home" aria-label="YemaKal home">
+                <img src="image_logo.png" alt="YemaKal Golden Bites logo">
+            </a>
 
-        <div class="childrentop1">
-            <img src="image_logo.png" alt="logo" width="100px">
-        </div>
-
-        <div class="childrentop2">
-             <nav>
+            <nav aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
-                <a href="#order">Highlights</a>
-                <a href="#features">Price</a>
-                
+                <a href="#product">Our Product</a>
+                <a href="#order">Order</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
-    </div>
     </header>
 
-    <!-- SECTION 1: HERO / HOME -->
     <main>
-        <section id="home">
-            <h1>YemaKal Golden Bites</h1>
-
-            <h1>"Yemakal, sarap na nakakasakal."</h1>
-
-            <p>
-                Enjoy the delicious combination of crispy binangkal
-                and creamy yema filling in every bite!
-            </p>
-
-            <img src="image_poster.png" alt="YemaKal Golden Bites" width="500">
-       
-        </section>
-
-        <!-- SECTION 2: ABOUT US -->
-        <section id="about">
-            <h2>About Us</h2>
-
-            <p>
-                YemaKal Golden Bites was created by ten Senior High School
-                student entrepreneurs who wanted to introduce a unique
-                and affordable Filipino snack.
-            </p>
-
-            <p>
-                
-                The product combines two Filipino favorites: yema and
-                binangkal. We use ingredients from local markets to
-                provide delicious and quality snacks at an affordable price.
-            </p>
-        </section>
-
-        <!-- SECTION 3: HIGHLIGHTS / KEY FEATURES -->
-        <section id="features">
-            <h2>Why Choose YemaKal?</h2>
-
-            <div class="feature">
-                <h3>Affordable Price</h3>
-                <p>Enjoy our delicious YemaKal for only ₱6 per piece.</p>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Freshly made • Local favorite</p>
+                <h1>YemaKal Golden Bites</h1>
+                <h2>“Yemakal, sarap na nakakasakal.”</h2>
+                <p class="hero-text">Enjoy the delicious combination of crispy binangkal and creamy yema filling in every golden bite!</p>
+                <div class="hero-actions">
+                    <a class="cta-button" href="#order">Order Now</a>
+                    <a class="text-link" href="#product">Explore the product →</a>
+                </div>
             </div>
-
-            <div class="feature">
-                <h3>Unique Product</h3>
-                <p>
-                    Experience crispy binangkal combined with
-                    a sweet and creamy yema filling.
-                </p>
+            <div class="hero-image-wrap">
+                <img class="hero-img" src="image_poster.png" alt="YemaKal Golden Bites poster">
             </div>
+        </section>
 
-            <div class="feature">
-                <h3>Easy Ordering</h3>
-                <p>
-                    Customers can request pre-orders and
-                    bulk orders for their convenience.
-                </p>
+        <section id="about" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">Our story</p>
+                <h2>Made with heart, shared with joy</h2>
             </div>
-
+            <div class="about-grid">
+                <p>YemaKal Golden Bites was created by ten Senior High School student entrepreneurs who wanted to introduce a unique and affordable Filipino snack.</p>
+                <p>The product combines two Filipino favorites: yema and binangkal. We use ingredients from local markets to provide delicious, quality snacks at an affordable price.</p>
+            </div>
         </section>
 
-        <!-- SECTION 3: HIGHLIGHTS / KEY FEATURES -->
-        <section id="order">
-            <p><strong>Only ₱6 per piece!</strong></p>
-
-            <button class="order-btn">Order Now</button>
-
+        <section id="product" class="content-section product-section">
+            <div class="section-heading">
+                <p class="eyebrow">Our product</p>
+                <h2>Two favorites in one perfect bite</h2>
+            </div>
+            <div class="product-card">
+                <img src="image_poster.png" alt="A box of YemaKal Golden Bites">
+                <div class="product-copy">
+                    <h3>YemaKal Golden Bites</h3>
+                    <p>A crispy, golden binangkal shell surrounds a sweet and creamy yema filling for an irresistible Filipino snack.</p>
+                    <ul>
+                        <li>Freshly prepared</li>
+                        <li>Perfect for sharing</li>
+                        <li>Available for bulk orders</li>
+                    </ul>
+                    <strong class="product-price">₱6 <span>/ piece</span></strong>
+                </div>
+            </div>
         </section>
-        <section id="contact us">
 
+        <section id="features" class="content-section features-section">
+            <div class="section-heading">
+                <p class="eyebrow">Why choose us</p>
+                <h2>Why Choose YemaKal?</h2>
+            </div>
+            <div class="features-wrapper">
+                <article class="feature">
+                    <span class="feature-number">01</span>
+                    <h3>Affordable Price</h3>
+                    <p>Enjoy our delicious YemaKal for only ₱6 per piece.</p>
+                </article>
+                <article class="feature">
+                    <span class="feature-number">02</span>
+                    <h3>Unique Product</h3>
+                    <p>Experience crispy binangkal combined with a sweet and creamy yema filling.</p>
+                </article>
+                <article class="feature">
+                    <span class="feature-number">03</span>
+                    <h3>Easy Ordering</h3>
+                    <p>Customers can request pre-orders and bulk orders for their convenience.</p>
+                </article>
+            </div>
         </section>
 
+        <section id="gallery" class="content-section gallery-section">
+            <div class="section-heading">
+                <p class="eyebrow">Gallery</p>
+                <h2>A golden look at YemaKal</h2>
+            </div>
+            <div class="gallery-grid">
+                <figure><img src="image.gallery1.png" alt="YemaKal promotional poster"></figure>
+                <figure><img src="image.gallery2.png" alt="YemaKal Golden Bites brand logo"></figure>
+                <figure><img src="image.gallery3.png" alt="YemaKal product display"></figure>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <div>
+                <p class="eyebrow">Ready to try it?</p>
+                <h2>Fresh, tasty, and only ₱6 each</h2>
+            </div>
+            <a class="order-btn" href="#contact">Place an Order</a>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact us</p>
+                <h2>Let’s get your order started</h2>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <h3>YemaKal Golden Bites</h3>
+                    <p>Valencia City, Bukidnon</p>
+                </div>
+                <a href="tel:+639944720396">
+                    <span>Call or text</span>
+                    <strong>0994 472 0396</strong>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p><strong> Golden Bites </strong></p>
-        <p>📍Valencia City, Bukidnon</p>
-        <p>Call: # 09944720396</p>
+        <p class="footer-title">YemaKal Golden Bites</p>
+        <p>Valencia City, Bukidnon</p>
+        <p>Call: 0994 472 0396</p>
         <p>© 2026 | Developed by: Decerien G. Verula</p>
     </footer>
 </body>
